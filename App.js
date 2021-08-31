@@ -65,6 +65,8 @@ export default App;
 
 // Notes:
 /* 
+Docs Url (More Info): https://reactnavigation.org/docs
+
 Navigation:
   1. navigation.navigate - navigates to another screen
   2. navigation.goBack - goes back 
@@ -80,4 +82,17 @@ Pass (1st Screen):
           });
 Get (2nd Screen): 
 const { itemId, otherParam } = route.params;
+
+Update params:
+Sample: navigation.setParams({
+  query: 'someText',
+});
+
+Initial Params (defaults if none are passed):
+Sample:
+<Stack.Screen
+  name="Details"
+  component={DetailsScreen}
+  initialParams={{ itemId: 42 }}
+/>
 */
