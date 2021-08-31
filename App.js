@@ -95,4 +95,11 @@ Sample:
   component={DetailsScreen}
   initialParams={{ itemId: 42 }}
 />
+
+
+- navigate and push accept an optional second argument to let you pass parameters to the route you are navigating to. For example: navigation.navigate('RouteName', { paramName: 'value' }).
+- You can read the params through route.params inside a screen
+- You can update the screen's params with navigation.setParams
+- Initial params can be passed via the initialParams prop on Screen
+- Params should contain the minimal data required to show a screen, nothing more
 */
